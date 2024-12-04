@@ -1,12 +1,13 @@
 import './NavSmall.css';
 import burger from '../../../assets/burger.png';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const NavSmall = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef<HTMLDivElement>(null);
 
     const handleLogoClick = () => {
         if (location.pathname === '/') {
@@ -42,6 +43,24 @@ const NavSmall = () => {
         setMenuOpen((prev) => !prev);
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+        if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+            setMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuOpen]);
+
     return (
         <div className="nav-small">
             <div className="ns-content">
@@ -53,7 +72,7 @@ const NavSmall = () => {
                     <h3>[ Web Developer ]</h3>
                 </div>
             </div>
-            <div className={`ns-menu ${menuOpen ? 'open' : 'closed'}`}>
+            <div ref={menuRef} className={`ns-menu ${menuOpen ? 'open' : 'closed'}`}>
                 <ul className="ns-ul">
                     <li className="ns-li" onClick={() => handleScrollToSection('about')}>About</li>
                     <li className="ns-li" onClick={() => handleScrollToSection('projects')}>Projects</li>

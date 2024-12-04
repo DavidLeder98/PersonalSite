@@ -1,45 +1,107 @@
-.dlwd-container{
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    padding: 170px 30px 30px  30px;
+@media (min-width: 1201px){
+    .dlwd-container{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        padding: 170px 30px 30px  30px;
+    }
+    
+    .dlwd-container h1{
+        font-size: 2.0rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    
+    .dlwd-container p{
+        font-size: 1.1rem;
+    }
+    
+    .dc-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+
+    .dcc-mobile-img{
+        display: none;
+    }
+    
+    .dcc-right{
+        width: 400px;
+    }
+    
+    .dcc-right img{
+        width: 100%;
+    }
+    
+    .dcc-left p{
+        margin: 0 0 7px 0;
+    }
+    
+    .dcc-blue{
+        color: #007BFF;
+        font-size: 1.2rem;
+    }
+    
+    .dcc-blue:hover{
+        text-decoration: underline 2px;
+    }
 }
 
-.dlwd-container h1{
-    font-size: 2.0rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 40px 0;
-}
+@media (max-width: 1200px){
+    .dlwd-container{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        padding: 100px 30px 30px 30px;
+    }
+    
+    .dlwd-container h1{
+        font-size: 2.0rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    
+    .dlwd-container p{
+        font-size: 1.1rem;
+    }
+    
+    .dc-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+    
+    .dcc-right{
+        display: none;
+    }
 
-.dlwd-container p{
-    font-size: 1.1rem;
-}
+    .dcc-mobile-img{
+        width: 100%;
+        margin: 0 0 30px 0;
+        display: flex;
+        justify-content: center;
+    }
 
-.dc-content{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 20px 0;
-}
-
-.dcc-right{
-    width: 400px;
-}
-
-.dcc-right img{
-    width: 100%;
-}
-
-.dcc-left p{
-    margin: 0 0 7px 0;
-}
-
-.dcc-blue{
-    color: #007BFF;
-    font-size: 1.2rem;
-}
-
-.dcc-blue:hover{
-    text-decoration: underline 2px;
+    .dcc-mobile-img img{
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .dcc-left p{
+        margin: 0 0 7px 0;
+    }
+    
+    .dcc-blue{
+        color: #007BFF;
+        font-size: 1.2rem;
+    }
+    
+    .dcc-blue:hover{
+        text-decoration: underline 2px;
+    }
 }

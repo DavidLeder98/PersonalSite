@@ -5,6 +5,9 @@ const DlwdHeader = () => {
     return (
         <div className="dlwd-container">
             <h1>About the Project</h1>
+            <div className="dcc-mobile-img">
+                <img src={dlwdimg} />
+            </div>
             <div className="dc-content">
                 <div className="dcc-left">
                     <p><b>Name: </b>David Leder - Web Developer</p>
@@ -26,7 +29,7 @@ const DlwdHeader = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="dcc-blue">github.com/DavidLeder98/PersonalSite</span>
+                            <span className="dcc-blue">github.com/DavidLeder98/ PersonalSite</span>
                         </a>
                     </p>
                 </div>
