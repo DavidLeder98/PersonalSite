@@ -16,6 +16,10 @@ const Stack = () => {
                         <p>.NET</p>
                     </div>
                     <div className="stack-item">
+                        <img src={azure} />
+                        <p>Azure</p>
+                    </div>
+                    <div className="stack-item">
                         <img src={html} />
                         <p>HTML</p>
                     </div>
@@ -26,10 +30,6 @@ const Stack = () => {
                     <div className="stack-item">
                         <img src={atom} />
                         <p>React</p>
-                    </div>
-                    <div className="stack-item">
-                        <img src={azure} />
-                        <p>Azure</p>
                     </div>
                 </div>
             </div>

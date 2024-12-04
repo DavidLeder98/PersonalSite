@@ -13,7 +13,6 @@
 
 .project-li{
     display: flex;
-    flex-direction: row;
     margin: 50px 0 0 0;
 }
 
@@ -53,4 +52,16 @@
 
 .here-link:hover{
     text-decoration: underline 2px;
+}
+
+@media (min-width: 1201px){
+    .project-li{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1200px){
+    .project-li{
+        flex-direction: column;
+    }
 }
