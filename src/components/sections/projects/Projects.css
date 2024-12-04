@@ -20,14 +20,6 @@
     margin: auto 0;
 }
 
-.project-logo{
-    width: 350px;
-    height: auto;
-    margin: auto 30px auto auto;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
 .project-logo:hover{
     transform: scale(1.1);
 }
@@ -58,10 +50,26 @@
     .project-li{
         flex-direction: row;
     }
+
+    .project-logo{
+        width: 350px;
+        height: auto;
+        margin: auto 30px auto auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 1200px){
     .project-li{
         flex-direction: column;
+    }
+
+    .project-logo{
+        width: 80%;
+        height: auto;
+        margin: auto 30px auto auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
     }
 }
