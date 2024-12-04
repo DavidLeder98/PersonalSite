@@ -16,7 +16,7 @@ const BwHeader = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="bwhc-orange">www.bookwyrm.store</span>
+                            <span className="bwhc-blue">www.bookwyrm.store</span>
                         </a>
                     </p>
                     <p>
