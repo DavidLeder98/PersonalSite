@@ -8,7 +8,7 @@ const Education = () => {
                 <div className="edu-row">
                     <div className="edu">
                         <h2>Degree:</h2>
-                        <p>University of Novi Sad, Faculty of Medicine</p>
+                        <p>University of Novi Sad, Faculty of Medicine:</p>
                         <p>Bachelor's in Radiologic Technology</p>
                         <h2>Experience:</h2>
                         <ul>
