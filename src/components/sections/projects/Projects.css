@@ -74,20 +74,18 @@
     }
 
     .project-logo{
-        width: 280px;
+        width: 100%;
         height: auto;
         margin: auto 0;
         transition: transform 0.3s ease;
         cursor: pointer;
     }
 
-    .project-li a{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .proj-desc{
         padding: 20px 0;
+    }
+
+    .proj-desc h2{
+        text-align: center;
     }
 }
