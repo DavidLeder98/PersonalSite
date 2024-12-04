@@ -22,11 +22,11 @@ const DlwdHeader = () => {
                     <p>
                         <b>GitHub Repository: </b>
                         <a
-                            href="https://www.lederdavid.com/"
+                            href="https://github.com/DavidLeder98/PersonalSite"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="dcc-blue">placeholder</span>
+                            <span className="dcc-blue">github.com/DavidLeder98/PersonalSite</span>
                         </a>
                     </p>
                 </div>
