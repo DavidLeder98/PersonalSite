@@ -19,3 +19,8 @@
     border: 1px solid #777;
     margin: 40px 0 0 0;
 }
+
+.bwfe-container b{
+    font-weight: 400;
+    color: #e25a00;
+}
