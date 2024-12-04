@@ -4,6 +4,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.bwbe-container b{
+    font-weight: 400;
+    color: #e25a00;
+}
+
 .bwbe-container h1{
     font-weight: 400;
     text-align: center;
