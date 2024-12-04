@@ -2,13 +2,6 @@
     width: 100%;
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    padding: 200px 30px 0 30px;
-}
-
-.pfp{
-    height: 280px;
-    width: auto;
-    margin: 0 50px 0 0;
 }
 
 .about-right h1{
@@ -29,11 +22,31 @@
 @media (min-width: 1201px){
     .about-container{
         flex-direction: row;
+        padding: 200px 30px 0 30px;
+    }
+
+    .pfp{
+        height: 280px;
+        width: auto;
+        margin: 0 50px 0 0;
     }
 }
 
 @media (max-width: 1200px){
     .about-container{
         flex-direction: column;
+        padding: 100px 30px 0 30px;
+    }
+
+    .about-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pfp{
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
     }
 }
