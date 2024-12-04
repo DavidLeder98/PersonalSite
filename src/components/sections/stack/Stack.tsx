@@ -33,16 +33,6 @@ const Stack = () => {
                     </div>
                 </div>
                 <div className="stack-list-small">
-                    <div className="sl-top">
-                        <div className="stack-item">
-                            <img src={net} />
-                            <p>.NET</p>
-                        </div>
-                        <div className="stack-item">
-                            <img src={azure} />
-                            <p>Azure</p>
-                        </div>
-                    </div>
                     <div className="sl-bot">
                         <div className="stack-item">
                             <img src={html} />
@@ -55,6 +45,16 @@ const Stack = () => {
                         <div className="stack-item">
                             <img src={atom} />
                             <p>React</p>
+                        </div>
+                    </div>
+                    <div className="sl-top">
+                        <div className="stack-item">
+                            <img src={net} />
+                            <p>.NET</p>
+                        </div>
+                        <div className="stack-item">
+                            <img src={azure} />
+                            <p>Azure</p>
                         </div>
                     </div>
                 </div>
