@@ -1,0 +1,98 @@
+.nav-large{
+    width: 100%;
+    height: 110px;
+    transition: height 0.3s ease-in-out;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-large.scrolled {
+    height: 70px;
+}
+
+.nav-large.scrolled:hover {
+    opacity: 1;
+}
+
+.nl-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nlc-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nlc-name{
+    color: #eeeeee;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.nlc-name.scrolled{
+    font-size: 1.6rem;
+}
+
+.nlc-profession{
+    color: #9ad119;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.nlc-profession.scrolled{
+    font-size: 1.4em;
+}
+
+
+.nlc-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nlc-item{
+    color: #999999;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+    font-weight: 800;
+}
+
+.nlc-item:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (min-width: 1401px){
+
+    .nlc-items{
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1400px){
+
+    .nlc-name{
+        font-size: 1.6rem;
+    }
+
+    .ncl-profession{
+        font-size: 1.4rem;
+    }
+
+    .nlc-items{
+        max-width: 600px;
+    }
+}

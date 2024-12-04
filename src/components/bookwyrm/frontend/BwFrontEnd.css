@@ -1,0 +1,21 @@
+.bwfe-container{
+    width: 100%;
+    padding: 80px 30px 30px  30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bwfe-container h1{
+    font-weight: 400;
+    text-align: center;
+}
+
+.bwfe-h2{
+    font-weight: 400;
+    margin: 30px 0 15px 0;
+}
+
+.bwfe-container img{
+    width: 100%;
+    border: 1px solid #777;
+    margin: 40px 0 0 0;
+}

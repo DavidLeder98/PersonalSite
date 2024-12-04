@@ -1,0 +1,15 @@
+.bwbe-container{
+    width: 100%;
+    padding: 80px 30px 30px  30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bwbe-container h1{
+    font-weight: 400;
+    text-align: center;
+}
+
+.bwbe-h2{
+    font-weight: 400;
+    margin: 30px 0 15px 0;
+}

@@ -1,0 +1,56 @@
+.projects-container{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 120px 30px 30px 30px;
+}
+
+.projects-container h1{
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+}
+
+.project-li{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 0;
+}
+
+.project-li a{
+    margin: auto 0;
+}
+
+.project-logo{
+    width: 350px;
+    height: auto;
+    margin: auto 30px auto auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-logo:hover{
+    transform: scale(1.1);
+}
+
+.proj-desc{
+    padding: 20px;
+}
+
+.proj-desc h2{
+    font-weight: 400;
+}
+
+.proj-desc p{
+    font-size: 1.1rem;
+    margin: 15px 0 0 0;
+}
+
+.here-link{
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+
+.here-link:hover{
+    text-decoration: underline 2px;
+}

@@ -1,0 +1,57 @@
+.contact-container{
+    padding: 120px 30px 30px 30px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-container h1{
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+}
+
+.contact-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cc-left h2, .cc-right h2{
+    font-weight: 400;
+    margin: 30px 0 20px 0;
+}
+
+.cc-left{
+    width: 40%;
+    padding: 0 40px 0 0;
+}
+
+.cc-ul{
+    padding: 5px 0;
+}
+
+.cc-li{
+    padding: 8px 0;
+    font-size: 1.1rem;
+}
+
+.cc-li a:hover{
+    color: #9ad119;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.cc-icon{
+    width: 24px;
+    height: auto;
+    margin: 0 10px -5px 0;
+}
+
+.git-icon{
+    opacity: 0.5;
+}
+
+.cc-right{
+    width: 60%;
+}

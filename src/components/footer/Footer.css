@@ -1,0 +1,62 @@
+.footer-container{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 100%;
+    margin-top: 150px;
+    border-top: 1px solid #aaaaaa;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section{
+    width: 260px;
+    margin: 15px;
+}
+
+.footer-li, .footer-ul, .hs-h5{
+    padding: 5px 0;
+}
+
+.footer-li a:hover, .frd:hover{
+    cursor: pointer;
+    font-weight: 800;
+    color: #9ad119;
+}
+
+.fli-icon{
+    width: 24px;
+    height: auto;
+    margin: 0 10px -5px 0;
+}
+
+.git-icon{
+    opacity: 0.5;
+}
+
+@media (min-width: 1001px){
+    .footer-content{
+        flex-direction: row;
+        height: 250px;
+    }
+    
+    .footer-section{
+        width: 260px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-section{
+        width: 260px;
+        margin: 20px auto;
+    }
+}

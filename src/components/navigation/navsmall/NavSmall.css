@@ -1,0 +1,80 @@
+.nav-small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.ns-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    background-color: black;
+    padding: 0 20px;
+}
+
+.nsc-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nsc-logo h2{
+    color: #fff;
+}
+
+.nsc-logo h3{
+    color: #9ad119;
+}
+
+.nsc-burger{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nsc-burger img{
+    filter: invert(100%);
+    height: 40px;
+}
+
+.ns-menu{
+    background-color: #222;
+    width: 70%;
+}
+
+.ns-menu.open {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ns-menu.closed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ns-ul{
+    padding: 15px 20px;
+}
+
+.ns-li{
+    color: #aaa;
+    padding: 15px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+.ns-li:hover{
+    color: #fff;
+}
