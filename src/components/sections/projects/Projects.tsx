@@ -11,7 +11,7 @@ const Projects = () => {
                 <h1>Deployed Projects</h1>
                 <div className="projects-list">
                     <div className="project-li">
-                        <Link to="/bookwyrm">
+                        <Link className="proj-logo-cont" to="/bookwyrm">
                             <img className="project-logo" src={bwlogo} />
                         </Link>
                         <div className="proj-desc">
@@ -21,7 +21,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="project-li">
-                        <Link to="/dlwd">
+                        <Link className="proj-logo-cont" to="/dlwd">
                             <img className="project-logo" src={dlwd} />
                         </Link>
                         <div className="proj-desc">

@@ -70,22 +70,25 @@
 
     .project-li{
         flex-direction: column;
-        margin: 50px 0 0 0;
+        margin: 50px 0 80px 0;
     }
 
     .project-logo{
         width: 100%;
+        max-width: 400px;
         height: auto;
-        margin: auto 0;
         transition: transform 0.3s ease;
         cursor: pointer;
     }
 
-    .proj-desc{
-        padding: 20px 0;
+    .proj-logo-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .proj-desc h2{
         text-align: center;
+        display: none;
     }
 }
