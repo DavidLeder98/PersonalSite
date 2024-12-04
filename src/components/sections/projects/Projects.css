@@ -1,7 +1,6 @@
 .projects-container{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    padding: 120px 30px 30px 30px;
 }
 
 .projects-container h1{
@@ -13,19 +12,10 @@
 
 .project-li{
     display: flex;
-    margin: 50px 0 0 0;
-}
-
-.project-li a{
-    margin: auto 0;
 }
 
 .project-logo:hover{
     transform: scale(1.1);
-}
-
-.proj-desc{
-    padding: 20px;
 }
 
 .proj-desc h2{
@@ -47,8 +37,13 @@
 }
 
 @media (min-width: 1201px){
+    .projects-container{
+        padding: 120px 30px 30px 30px;
+    }
+
     .project-li{
         flex-direction: row;
+        margin: 50px 0 0 0;
     }
 
     .project-logo{
@@ -58,18 +53,41 @@
         transition: transform 0.3s ease;
         cursor: pointer;
     }
+
+    .project-li a{
+        margin: auto 0;
+    }
+
+    .proj-desc{
+        padding: 20px;
+    }
 }
 
 @media (max-width: 1200px){
+    .projects-container{
+        padding: 60px 30px 30px 30px;
+    }
+
     .project-li{
         flex-direction: column;
+        margin: 50px 0 0 0;
     }
 
     .project-logo{
-        width: 80%;
+        width: 280px;
         height: auto;
-        margin: auto 30px auto auto;
+        margin: auto 0;
         transition: transform 0.3s ease;
         cursor: pointer;
+    }
+
+    .project-li a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .proj-desc{
+        padding: 20px 0;
     }
 }
