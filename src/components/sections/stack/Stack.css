@@ -1,42 +1,81 @@
-.stack-container{
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    padding: 120px 30px 30px 30px;
-}
-
-.stack-list{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.stack-container h1{
-    text-align: center;
-    font-weight: 400;
-    margin: 0 0 60px 0;
-    font-size: 2rem;
-}
-
-.stack-item img{
-    height: 100px;
-    width: auto;
-}
-
-.stack-item p{
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 10px 0 0 0;
-    color: #444;
-}
-
 @media (min-width: 1201px){
-    .stack-list{
+    .stack-container{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        padding: 120px 30px 30px 30px;
+    }
+    
+    .stack-list-large {
+        width: 100%;
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .stack-list-small{
+        display: none;
+    }
+    
+    .stack-container h1{
+        text-align: center;
+        font-weight: 400;
+        margin: 0 0 60px 0;
+        font-size: 2rem;
+    }
+    
+    .stack-item img{
+        height: 100px;
+        width: auto;
+    }
+    
+    .stack-item p{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 10px 0 0 0;
+        color: #444;
     }
 }
 
 @media (max-width: 1200px){
-    .stack-list{
+    .stack-container{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        padding: 0 30px 30px 30px;
+    }
+    
+    .stack-list-large {
+        display: none;
+    }
+
+    .stack-list-small{
+        width: 100%;
+        display: flex;
         flex-direction: column;
+    }
+
+    .sl-top, .sl-bot{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px 0 0 0;
+    }
+    
+    .stack-container h1{
+        text-align: center;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    
+    .stack-item img{
+        height: 60px;
+        width: auto;
+    }
+    
+    .stack-item p{
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 10px 0 0 0;
+        color: #444;
     }
 }
