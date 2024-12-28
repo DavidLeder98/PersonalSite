@@ -16,6 +16,7 @@ const Projects = () => {
                         </Link>
                         <div className="proj-desc">
                             <h2>Book Wyrm</h2>
+                            <p>Main features: </p>
                             <p>I built this e-commerce books store as a demo-project to showcase my skills and abilities as a developer. It handles cart managment, user authentication, user tracking and much, more! Except actual purchases.</p>
                             <p>Click <Link className="here-link" to="/bookwyrm">here</Link> to find out more.</p>
                         </div>
