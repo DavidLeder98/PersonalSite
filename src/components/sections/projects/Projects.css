@@ -27,6 +27,16 @@
     margin: 15px 0 0 0;
 }
 
+.proj-desc ul{
+    font-size: 1.1rem;
+    list-style: disc;
+    padding: 10px 0 0 20px;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
 .here-link{
     color: #007BFF;
     font-size: 1.2rem;
