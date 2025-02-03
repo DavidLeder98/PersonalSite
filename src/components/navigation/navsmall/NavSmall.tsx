@@ -42,25 +42,24 @@ const NavSmall = () => {
     const toggleMenu = () => {
         setMenuOpen((prev) => !prev);
     };
-
+    
     const handleClickOutside = (event: MouseEvent) => {
-        if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        if (
+            menuRef.current &&
+            !menuRef.current.contains(event.target as Node) &&
+            !(event.target as HTMLElement).closest('.nsc-burger') // Allow clicking the burger icon to toggle
+        ) {
             setMenuOpen(false);
         }
     };
-
+    
     useEffect(() => {
-        if (menuOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
-        } else {
-            document.removeEventListener('mousedown', handleClickOutside);
-        }
-
+        document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [menuOpen]);
-
+    }, []);
+    
     return (
         <div className="nav-small">
             <div className="ns-content">
